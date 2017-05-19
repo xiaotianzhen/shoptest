@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">shoptest</string>
+    <string name="login_name_hint">登录名/Name</string>
+    <string name="login_password_hint">密码/password</string>
+    <string name="et_code_hint">验证码</string>
+    <string name="txt_btn_longin">登陆</string>
+    <string name="txt_tv_about">网络文化经营许可证：浙网文[2013]0268-027号</string>
+    <string name="txt_tv_about2">浙公网安备 33010002000078号</string>
+</resources>
