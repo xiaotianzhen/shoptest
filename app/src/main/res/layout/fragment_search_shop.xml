@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.qianwang.shoptest.fragment.SearchShopFragment">
+
+    <com.qianwang.shoptest.view.DropDownMenu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dividerColor="@color/blue_app"
+        app:maskColor="@color/mask_color"
+        app:menuBackgroundColor="@color/base_title_color"
+        app:menuSelectedIcon="@drawable/ic_img_up"
+        app:menuTextSize="16sp"
+        app:menuUnselectedIcon="@drawable/ic_img_down"
+        app:textSelectedColor="@color/blue_app"
+        app:textUnselectedColor="@color/drop_down_unselected"
+        app:underlineColor="@color/blue_app"  >
+
+    </com.qianwang.shoptest.view.DropDownMenu>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+</FrameLayout>

@@ -1,7 +1,6 @@
 package com.qianwang.shoptest.activity;
 
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +11,7 @@ import android.widget.TextView;
 import com.qianwang.shoptest.R;
 import com.qianwang.shoptest.view.Code;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends BaseActivity implements View.OnClickListener {
 
     private ImageView im_showcode;
     private String realCode;
@@ -34,7 +33,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
         initView();
         setTextType();
         im_showcode.setImageBitmap(Code.getInstance().createBitmap());
@@ -42,6 +40,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         im_showcode.setOnClickListener(this);
 
 
+    }
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_login;
     }
 
     /**
@@ -64,7 +67,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.im_showcode:
                 im_showcode.setImageBitmap(Code.getInstance().createBitmap());
                 break;
-
         }
     }
 }

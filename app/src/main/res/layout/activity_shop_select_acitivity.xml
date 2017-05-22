@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shop_select_acitivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    tools:context="com.qianwang.shoptest.activity.ShopSelectAcitivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/priceRange"
+            android:textColor="#81c5ea"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:background="@drawable/goods_select_shap"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:hint="￥"/>
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <EditText
+                android:background="@drawable/goods_select_shap"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:hint="￥"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="#000b35"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/stock"
+            android:textColor="#81c5ea"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:background="@drawable/goods_select_shap"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unit2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#000b35"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/brand"
+            android:textColor="#81c5ea"
+            android:textSize="12sp"/>
+
+        <Spinner
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:background="#000b35"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/car_type2"
+                android:textColor="#81c5ea"
+                android:textSize="12sp"/>
+            <ImageView
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_img_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <com.qianwang.shoptest.view.MyFlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.qianwang.shoptest.view.MyFlowLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#000b35"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <Button
+            android:background="@drawable/goods_select_shap"
+            android:textSize="14sp"
+            android:textColor="#81c5ea"
+            android:text="@string/cancel"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textSize="14sp"
+            android:textColor="#f6f6f6"
+            android:text="@string/ok"
+            android:background="#81c5ea"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
