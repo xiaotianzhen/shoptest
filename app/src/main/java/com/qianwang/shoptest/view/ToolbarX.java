@@ -34,6 +34,7 @@ public class ToolbarX  {
     }
     public ToolbarX setTitle(String title){
         mActionbar.setTitle(title);
+        mToolbar.setPadding(20,0,0,0);
         mToolbar.setPopupTheme(R.style.Toolbar_TitleText);
         mToolbar.setTitleTextAppearance(mActivity.getApplicationContext(),R.style.Toolbar_TitleText);
         return this;
